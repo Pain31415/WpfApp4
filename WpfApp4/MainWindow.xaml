@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBox x:Name="ProcessNameTextBox" Width="200" Margin="10" PlaceholderText="Enter process name..."/>
+            <Button Content="Start Process" Click="StartProcessButton_Click" Width="200" Margin="10"/>
+            <Button Content="Kill Process" Click="KillProcessButton_Click" Width="200" Margin="10"/>
+            <Label x:Name="ProcessStatusLabel" Content="Process status will be shown here." Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
